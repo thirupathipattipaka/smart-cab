@@ -11861,7 +11861,7 @@ div#notebook {
 <div class="text_cell_render border-box-sizing rendered_html">
 <p>**Answer:
 The smartcab was not moving at all during the simulation.
-Since driving agent was stoped close to the traffic signal. the driving agent is receiving rewards based on the action it performs given the traffic signals (traffic red light, green light and no oncoming traffic) and based on its action to reach the final destination. Traffic light colors are affects the reward based on the action that performed by the driving agent such as stop when the traffic light red and move forward/left/right when the light is green will get postive rewards, and no movement at all at green signal and no oncoming trafiic will get negative reards.</p>
+Since driving agent was stoped close to the traffic signal. the driving agent is receiving rewards based on the action it performs given the traffic signals (traffic red light, green light and no oncoming traffic) and based on its action to reach the final destination. Traffic light colors are affects the reward based on the action that performed by the driving agent such as stop when the traffic light red and move forward/left/right when the light is green will get postive rewards, and no movement at all at green signal and no oncoming trafiic will get negative reards and agent will get positive rewards when the idles at green light but with traffic.</p>
 <p>**</p>
 
 </div>
@@ -15853,7 +15853,7 @@ Answer:</p>
 <p>For this plicy, it is makes sense to have positive rewards (1.85) for forward movement which will help the agnet to reach the destination faster. As we have green signal and it make sense to have None have negative rewards.</p>
 <p>('forward', 'green', 'right', 'right')
  -- forward : 0.00  -- None : -2.08  -- right : 1.16  -- left : -15.59</p>
-<p>This ploicy also makes sense as the smartcab asked to take right movement at the green signal, it has highest rewards for the right movement.</p>
+<p>This ploicy does not makes sense as the smartcab asked to take the forward movement, but it has highest rewards for the right movement.</p>
 <p>**</p>
 
 </div>
